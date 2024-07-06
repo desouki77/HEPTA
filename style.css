@@ -1,0 +1,192 @@
+* 
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    
+}
+.main_section 
+{
+    
+    background-image: url("./images/main_background.jpeg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    min-height: 700px;
+   
+}
+.main_section::after
+{
+   content: '';
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0, 0.4);
+   
+}
+
+.off_screen_menu 
+{
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    visibility: hidden; 
+    z-index: 222;        
+}
+.off_screen_menu span 
+{
+    color: black;
+    position: absolute;
+    top: 60px;
+    right: 200px;
+    font-size: 50px;
+    cursor: pointer;
+    
+}
+.off_screen_menu ul 
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+ 
+    flex-direction: column;
+}
+.off_screen_menu ul li 
+{
+    color: black;
+    list-style: none;
+    font-size: 50px;
+    line-height: 80px;  
+}
+.off_screen_menu.active 
+{
+    visibility: visible;
+    
+}
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 60px 0;
+    z-index: 2;
+}
+.head
+{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo p
+{
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1;
+    cursor: pointer;
+    font-family: "Abril Fatface" , times , serif;
+}
+
+.menu 
+{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+    height: 40px;
+    width: 30px;
+    
+}
+
+.menu span 
+{
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+
+
+.container
+{
+  
+    z-index: 30;
+    height: 40vh;
+    width: 100%;
+   position: relative;
+   top: 250px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+.i1
+{
+    color: #fff;
+    font-size: 80px;
+    font-family: "Abril fatface", times , serif;
+    line-height: 1;
+    font-weight: bold;
+    
+}
+.i2
+{
+    font-size: 30px;
+    font-weight: 200;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.i2 a 
+{
+    text-decoration: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+}
+.i2 a:hover 
+{
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+}
+.i3 button
+{
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: .2em;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    border-width: 2px;
+    color: #f8f9fa;
+    background-color: transparent;
+    background-image: none;
+    border-color: #f8f9fa;
+}
+
+.i3 button:hover 
+{
+    background-color: #f8f9fa;
+    color: black;
+}
+
+
+
+
+
